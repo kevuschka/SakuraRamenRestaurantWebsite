@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>✿ Sakura Ramen</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css"> 
+        <!-- Font Raleway -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Font economica -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="body-div">
+            <div class="header1">
+                <!-- ##########  nav    -->
+                <div class="nav flex">
+                    <img class="nav_flower_pic" src="img/saku.png" alt="pinc_flower">
+                    <div class="nav_items_right none font-family-raleway bold no-display flex">
+                        <a class="hover_red" href="#locations" id="location">LOCATIONS</a>
+                        <a class="hover_red" href="#about" id="aboute">ABOUT</a>
+                        <a class="hover_red" href="#menu" id="menue">MENU</a>
+                        <a class="red_phone_box flex" href="tel:017654564534" title="Telefonnummer">
+                            <img src="img/phone.png" alt="telephone">
+                                <span>0176 54564534</span>
+                        </a>
+                        <a class="translate none" href="#" onclick="toGerman()"><img src="img/German-Flag-Sphere.png"></a>
+                        <a class="translate none" href="https://kevin-schumilo.developerakademie.net/SakuraRamen/index.html" ><img src="img/U.S.A.-Flag.png" alt=""></a> 
+                    </div>
+                </div>
+                <div class="headline_area flex">
+                    <h1 class="font-family-raleway bold">SAKURA RAMEN</h1>
+                    <p class="font-family-raleway" id="headline-slogan">THE BEST RAMEN IN TOWN</p>
+                </div>
+            </div>
+            <!-- HOW TO ORDER -->
+            <div class="how_to_order">
+                <h2 class="headline_how_to_order headline font-family-raleway bold flex" id="how-to-order">HOW TO ORDER</h2>
+                <div class="orders flex">
+                    <div class="order_item1_noodle flex">
+                        <img class="order_item1_pic" src="img/bowl_icon.jpg" alt="pasta_bowl">
+                        <div>  
+                            <p id="pick-noodle1">Pick</p>
+                            <p id="pick-noodle2">Your Noodle</p>
+                        </div>  
+                        <div class="orders-p-responsiv" id="pick-noodle-resp">Pick Your Noodle</div>
+                    </div>
+                    <div class="order_item2_broth  flex">
+                        <img class="order_item2_pic" src="img/broth_icon.png" alt="bowl">
+                        <p id="pick-broth1">Pick</p>
+                        <p id="pick-broth2">Your Broth</p>
+                        <div class="orders-p-responsiv" id="pick-broth-resp">Pick Your Broth</div>
+                    </div>
+                    <div class="order_item3_toppings  flex">
+                        <img class="order_item3_pic" src="img/eggs_icon.jpg" alt="half_eggs">
+                        <p id="add-toppings">Add Your Toppings</p>
+                        <div class="orders-p-responsiv" id="add-toppings-resp">Add Your Toppings</div>
+                    </div>
+                </div>
+            </div>
+            <!-- OUR MENU -->
+            <div class="our_menu" id="menu">
+                <h2 class="headline_our_menu headline font-family-raleway bold flex" id="our-menu">OUR MENU</h2>
+                <div class="menu_list flex">
+                    <div class="menu_one_tonkasu flex">
+                        <img src="img/r1.png" alt="eggs_soup">
+                        <div class="item_descriptions item_one_description flex">
+                            <p class="item_headline font-family-economica bold">Tonkasu Ramen</p>
+                            <div class="table1 font-family-raleway bold">
+                                <table>
+                                    <tbody></tbody>
+                                        <tr>
+                                            <td class="name" id="chicken1">CHICKEN</td>
+                                            <td class="td_2">11.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="beef1">BEEF</td>
+                                            <td class="td_2">12.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="shrimp1">SHRIMP</td>
+                                            <td class="td_2">13.95€</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_two_spicy flex">
+                        <img src="img/r2.png" alt="egg_soup">
+                        <div class="item_descriptions item_two_description flex">
+                            <p class="item_headline font-family-economica bold">Spicy Miso Ramen</p>
+                            <div class="table2 font-family-raleway bold">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name" id="chicken2">CHICKEN</td>
+                                            <td class="td_2">11.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="beef2">BEEF</td>
+                                            <td class="td_2">12.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="shrimp2">SHRIMP</td>
+                                            <td class="td_2">13.95€</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_three_shio flex">
+                        <img src="img/r3.png" alt="duck_soup">
+                        <div class="item_descriptions item_three_description flex">
+                            <p class="item_headline font-family-economica bold">Shio Ramen</p>
+                            <div class="table3 font-family-raleway bold">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name" id="chicken3">CHICKEN</td>
+                                            <td class="td_2">11.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="beef3">BEEF</td>
+                                            <td class="td_2">12.95€</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name" id="shrimp3">SHRIMP</td>
+                                            <td class="td_2">13.95€</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIND US AT -->
+            <div class="find_us_at flex" id="locations">
+                <h2 class="headline_find_us_at headline font-family-raleway bold flex" id="find-us-at">FIND US AT</h2>
+                <div class="find_us_at_adress flex">
+                    <img class="adress_pic" src="img/LO.png">
+                    <p class="font-family-raleway" id="adress">Kapuzinerstraße 31, München, BY 80337</p>
+                </div>
+            </div>
+            <!-- MAPS -->
+            <iframe class="gmaps_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43128.920968700906!2d19.02082042882971!3d47.49853188384487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc6a0c8daa65%3A0xc95d7dba0601f2ec!2sSakura%20Ramen!5e0!3m2!1sde!2sde!4v1656599828323!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- FOOTER -->
+            <div class="footer flex" id="about">
+                <div class="left_foot_div flex">
+                    <a href="#"><img class="left_foot_pic" src="img/saklogo.png" alt="Sakura Ramen Logo"></a>
+                </div>
+                <!-- attribution to freepik from flaticon.com -->
+                <div class="right_foot_div flex">
+                    <a href="https://de-de.facebook.com/login/?next=https%3A%2F%2Fde-de.facebook.com%2Fpages%2Fcategory%2FDiner%2FSakura-Ramen-168680669844703%2F"><img class="fb_icon" src="img/fb.png" alt="facebook emblem"></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/sakuraramen/"><img class="ins_icon" src="img/ins.png" alt="instagram emblem"></a>
+                    <a href="https://www.tripadvisor.de/Restaurant_Review-g274887-d13373327-Reviews-Sakura_Ramen-Budapest_Central_Hungary.html"><img class="tripad_icon" src="img/tripad.png" alt="tripadviser emblem"></a>
+                </div>
+                <div class="middle_foot_div" id="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        
+            <!-- OVERLAY MENU -->
+            <img onclick="showMenu()" class="menu-img" src="img/menu.png">
+            <div id="side-menu" class="overlay-menu font-family-raleway bold flex">
+                <a onclick="closeMenu()" class="hover_red" href="#menu" id="menue">MENU</a>
+                <a onclick="closeMenu()" class="hover_red" href="#about" id="aboute">ABOUT</a>
+                <a onclick="closeMenu()" class="hover_red" href="#locations" id="location">LOCATIONS</a>
+                <div class="translate-div overlay-item4">
+                    <a onclick="toGerman();closeMenu()" class="translate german"><img src="img/German-Flag-Sphere.png"></a>
+                    <a onclick="closeMenu()" class="translate" href="https://kevin-schumilo.developerakademie.net/SakuraRamen/index.html" ><img src="img/U.S.A.-Flag.png" alt=""></a>
+                </div>
+                <a class="red_phone_box flex" href="tel:017654564534" title="Telefonnummer">
+                    <img src="img/phone.png" alt="telephone">
+                        <span>0176 54564534</span>
+                </a>
+                <div onclick="closeMenu()" class="close">X</div> 
+            </div>
+        </div>
+    </body>
+</html> 

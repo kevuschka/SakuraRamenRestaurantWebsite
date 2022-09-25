@@ -1,0 +1,692 @@
+/* fonts: economica and raleway
+
+    font-family: 'Economica', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif; */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font-family-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-family-economica {
+    font-family: 'Economica', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.body-div {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ########### header 1 ######################### */
+.header1 {
+    /* outline: 3px solid green; */
+    background-image: url(img/bgr1.jpg);
+    height: 100vh ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  bottom;
+    padding-top: 32px;
+}
+/*##########  nav   */
+.nav {
+    /* justify-content: space-between; */
+    padding: 0 64px 0 110px;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav_flower_pic {
+    width: 65px;
+    height: 65px;
+}
+
+.nav_items_right{
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.nav_items_right a, .overlay-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+}
+
+.nav_items_right .hover_red:hover, .overlay-menu .hover_red:hover {
+    color: rgb(160, 29, 29);
+}
+
+
+
+.red_phone_box {
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(160, 29, 29);
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 185px;
+}
+
+.red_phone_box:hover  {
+    cursor: pointer;
+    background-color: rgb(166, 59, 59);
+}
+
+.red_phone_box span:hover {
+    color: white;
+}
+
+.red_phone_box img {
+    width: 11%;
+    /* margin-right: 5px; */
+}
+
+.translate img {
+    width: 30px;
+    border-radius: 15px;
+}
+
+.german {
+    z-index: 1;
+}
+
+.headline_area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+}
+
+.footer + .menu-img  {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.menu-img {
+    display: none;
+    z-index: 1;
+}
+
+.overlay-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 220px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    border-left: 2px solid black;
+    background-color: rgb(51, 50, 50);
+    transform: translateX(220px);
+    transition: all 225ms ease-in-out;
+    z-index: 2;
+}
+
+.show-overlay-menu {
+    transform: translateX(0px);
+}
+
+.overlay-menu a, .overlay-item4 {
+    margin-top: 16px;
+}
+
+.close {
+    font-size: 32px;
+    margin-top: 64px;
+    cursor: pointer;
+    color: rgb(111, 110, 110);
+}
+
+.headline_area h1 {
+    font-size: 7.8rem;
+    color: white;
+    margin:0;
+}
+
+.headline_area p {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* ########## header2 HOW TO ORDER */
+.how_to_order {
+    padding: 32px 0 32px 0;
+}
+
+.headline_how_to_order {
+    font-size: 5rem;
+    color: rgb(160, 29, 29);
+    margin:0;
+    justify-content: center;
+}
+
+.orders {
+    justify-content: space-around;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+
+.orders p {
+    padding: 0px;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    margin:0;
+}
+
+.orders-p-responsiv {
+    display: none;
+}
+
+.order_item1_noodle, .order_item2_broth, .order_item3_toppings {
+    width: 13rem;
+    padding: 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.order_item2_pic, .order_item3_pic {
+    padding: 0;
+    margin-bottom: 16px;
+    /* width: 51%; */
+    width: 100px;
+    height: 97px;
+    /* width:  7vw;
+    height: 9vw; */
+}
+
+.order_item1_pic{
+    padding: 0;
+    width:  100px;
+    height: 100px;
+}
+
+/* ########## header3 OUR MENU */
+.our_menu {
+    padding: 32px 80px;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headline_our_menu  {
+    margin:0;
+    color: rgb(160, 29, 29);
+    font-size: 5rem;
+    justify-content: center;
+}
+
+.menu_list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_one_tonkasu, .menu_two_spicy, .menu_three_shio {
+    margin-top: 64px;
+    justify-content: space-between;
+}
+
+.menu_two_spicy {
+    flex-direction: row-reverse;
+}
+
+.our_menu img {
+    width: 372px;
+}
+
+.item_descriptions  {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item_headline {
+    margin: 0;
+}
+
+.item_descriptions p {
+    font-size: 56px;
+}
+
+.item_one_description, .item_three_description {
+    margin-left: 80px;
+}
+
+.item_two_description {
+    margin-right: 80px;
+}
+
+.our_menu table {
+    margin-top: 24px; /* Abstand Tabelle vs Überschrift */
+    font-size: 32px;
+    color: rgb(105, 105, 105);
+    border-spacing: 12px;
+}
+
+tr td:nth-child(1) {
+    padding-right: 7em;
+}
+
+/* ########## header4 FIND US AT */
+.find_us_at {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 32px 0;
+}
+
+.headline_find_us_at {
+    color: rgb(160, 29, 29);
+    font-size: 5rem;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin: 0;
+}
+
+.find_us_at_adress {
+    justify-content: center;
+    align-items: center;
+    width: 41rem;
+}
+
+.adress_pic {
+    height: 32px;
+    margin-right: 15px;
+}
+
+.find_us_at_adress p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* ########## header5 MAPS */
+.gmaps_map {
+    width: 100%;
+    height: 550px;
+    border: 0;
+}
+
+/* ########## header6 FOOTER */
+.footer {
+    padding: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_foot_div {
+    justify-content: center;
+    align-items: center;
+}
+
+.left_foot_div img {
+    width: 300px;
+}
+
+.middle_foot_div {
+    font-size: 16px;
+    color: gray;
+    flex-wrap: wrap;
+}
+
+.middle_foot_div a {
+    text-decoration: none;
+    color: rgb(3, 76, 3);
+}
+
+.middle_foot_div a:hover {
+    color: rgb(74,210,149);
+}
+
+.right_foot_div {
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fb_icon, .ins_icon, .tripad_icon {
+    width: 60px;
+}
+
+/* ############# RESPONSIVE #################### */
+
+@media screen and (max-width: 1001px) {
+
+    .headline_area {
+        height: 40%;
+    }
+
+    .headline_area h1 {
+        font-size: 5rem;
+    }
+
+    .headline_area p {
+        font-size: 1.5rem;
+    }
+
+    .our_menu img {
+        width: 250px;
+    }
+
+    .our_menu table {
+        margin-top: 8px;
+        font-size: 24px;
+    }
+
+    .left_foot_div img {
+        width: 215px;
+    }
+
+    .footer {
+        padding: 32px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gmaps_map {
+        height: 400px;
+    }
+}
+/* ########## max-width: 800px ############################# */
+@media screen and (max-width: 800px) {
+
+    .overlay-menu {
+        display: flex;
+    }
+
+    .nav {
+        padding: 0 32px;
+        justify-content: center;
+    }
+
+    .nav_items_right {
+        justify-content: space-between;
+        width: 260px;
+    }
+
+    .none  {
+        display: none;
+    }
+
+    .menu-img {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .headline_area {
+        height: 50%;
+    }
+
+    .headline_area h1 {
+        font-size: 4rem;
+    }
+
+    .how_to_order {
+        padding: 32px;
+    }
+
+    .headline_how_to_order {
+        font-size: 4rem;
+    }
+
+    .orders {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 72px;
+    }
+
+    .orders p {
+        display: none;
+    }
+
+    .orders-p-responsiv {
+        font-family: 'Economica', sans-serif;
+        font-weight: bold;
+        font-size: 46px;
+        display: inline;
+        align-self: center;
+    }
+
+    .order_item1_noodle, .order_item2_broth, .order_item3_toppings {
+        flex-direction: row;
+        width: 32rem;
+    }
+
+    .order_item2_broth, .order_item3_toppings {
+        margin-top: 40px;
+    }
+
+    .our_menu {
+        padding: 32px;
+    }
+    .headline_our_menu {
+        font-size: 4rem;
+    }
+
+    .our_menu img {
+        display: none;
+    }
+
+    .our_menu table {
+        margin-top: 24px; /* Abstand Tabelle vs Überschrift */
+        font-size: 32px;
+        color: rgb(105, 105, 105);
+        border-spacing: 12px;
+
+    }
+
+    .item_one_description, .item_three_description {
+        margin-left: auto;
+    }
+
+    .item_two_description {
+        margin-right: auto;
+    }
+
+    .menu_one_tonkasu, .menu_two_spicy, .menu_three_shio {
+        background-repeat: no-repeat;
+        background-size: 170px;
+        background-position: center bottom;
+
+    }
+
+    .menu_one_tonkasu {
+        background-image: url('img/r1.png');
+        background-color: rgba(0, 0, 0, 0.073);
+    }
+
+    .menu_two_spicy {
+        background-image: url('img/r2.png');
+        background-color: rgba(0, 0, 0, 0.073)
+    }
+
+    .menu_three_shio {
+        background-image: url('img/r3.png');
+        background-color: rgba(0, 0, 0, 0.073)
+    }
+
+    .headline_find_us_at {
+        font-size: 4rem;
+    }
+
+    .find_us_at_adress {
+        width: 36rem;
+    }
+
+    .find_us_at_adress p {
+        font-size: 28px;
+    }
+
+    .footer {
+        padding: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_foot_div, .middle_foot_div, .right_foot_div {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+/* ########## max-width: 600px ############################# */
+@media screen and (max-width: 600px) {
+    
+    .headline_area {
+        height: 40%;
+    }
+
+    .headline_area h1 {
+        font-size: 40px;
+    }
+
+    .headline_area p {
+        font-size: 1rem;
+    }
+
+    .how_to_order {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .headline_how_to_order {
+        font-size: 2rem;
+    }
+
+    .orders {
+        margin-top: 16px;
+    }
+
+    .orders-p-responsiv {
+        font-size: 25px; 
+    }
+
+    .order_item1_noodle, .order_item2_broth, .order_item3_toppings {
+        width: 18rem;
+    }
+
+    .order_item2_broth, .order_item3_toppings {
+        margin-top: 16px;
+    }
+
+    .order_item1_pic {
+        width: 55px;
+        height: 55px;
+    }
+
+    .order_item2_pic, .order_item3_pic {
+        width: 55px;
+        height: 52px;
+    }
+
+    .our_menu {
+        padding: 16px;
+    }
+
+    .headline_our_menu {
+        font-size: 2rem;
+    }
+
+    .our_menu table {
+        margin-top: 2px; /* Abstand Tabelle vs Überschrift */
+        font-size: 20px;
+        border-spacing: 8px;
+    }
+
+    .menu_one_tonkasu, .menu_two_spicy, .menu_three_shio {
+        background-size: 100px;
+        margin-top: 16px;
+    }
+
+    .item_descriptions p {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .find_us_at {
+        padding: 16px;
+    }
+
+    .headline_find_us_at {
+        font-size: 2rem;
+    }
+
+    .find_us_at_adress {
+        width: 20rem;
+    }
+
+    .adress_pic {
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    .find_us_at_adress p {
+        font-size: 14px;
+    }
+
+    .gmaps_map {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 16px;
+    }
+
+    .left_foot_div, .middle_foot_div, .right_foot_div {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .middle_foot_div {
+        font-size: 8px;
+    }
+
+    .fb_icon, .ins_icon, .tripad_icon {
+        width: 42px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .nav_items_right {
+        margin-top: 32px;
+        width: 260px;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
